@@ -1,4 +1,5 @@
 # Virtual environment
+tenv/
 venv/
 __pycache__/
 *.pyc

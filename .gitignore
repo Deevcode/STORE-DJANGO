@@ -1,0 +1,88 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secret key
+*.secret_key
+
+# Database
+db.sqlite3
+
+# Logs
+*.log
+
+# Static files
+staticfiles/
+
+# Media
+media/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Compiled Python files
+*.pyc
+
+# Compiled C extensions
+*.so
+
+# Project settings
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# SageMath
+.sageMath
+
+# Environments
+.env
+
+# Docker Compose
+docker-compose.yml
+docker-compose.override.yml
+*.docker-compose.yml
+*.docker-compose.override.yml
+
+# Heroku
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+/staticfiles/
+.DS_Store

@@ -1,0 +1,55 @@
+Django
+django-crispy-forms
+Pillow
+django-allauth
+django-countries
+django-storages
+django-ckeditor
+django-filter
+django-paypal
+stripe
+gunicorn
+whitenoise
+django-heroku
+psycopg2
+django-environ
+python-decouple
+
+# Utilidades de desarrollo
+autopep8
+black
+flake8
+isort
+mccabe
+pylint
+django-debug-toolbar
+
+# Seguridad
+bandit
+django-secure
+
+# Internacionalización
+django-modeltranslation
+
+# Cache
+django-cache-url
+python-memcached
+
+# Testing
+pytest
+pytest-django
+factory-boy
+
+# API REST
+djangorestframework
+django-rest-swagger
+
+# Celery para tareas en segundo plano
+celery
+django-celery-results
+
+# Buscador
+django-haystack
+
+# Servidor de correo (si necesitas enviar correos desde la aplicación)
+django-anymail

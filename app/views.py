@@ -10,3 +10,6 @@ def contacto(request):
 
 def tienda(request):
     return render(request, 'app/tienda.html')
+
+def nosotros(request):
+    return render(request, 'app/nosotros.html')

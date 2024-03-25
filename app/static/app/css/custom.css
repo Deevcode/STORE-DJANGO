@@ -1,3 +1,9 @@
 /*
-Custom Css
-*/
+/* Estilos personalizados para el contenido de contacto */
+.contacto-titulo {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.contacto-dato {
+    color: #333; /* Color de texto oscuro */
+}

@@ -1,14 +1,62 @@
 {% extends 'app/base.html' %}
 {% load static %}
+
 {% block css %}
     <!-- Agregar estilos específicos para la página de contacto si es necesario -->
+    <style>
+        /* Estilos personalizados para el mapa */
+        #map {
+            height: 300px; /* Altura del mapa */
+            width: 100%; /* Ancho del mapa */
+        }
+    </style>
 {% endblock %}
 
 {% block js %}
     <!-- Agregar scripts específicos para la página de contacto si es necesario -->
+    <script>
+        // Función para inicializar el mapa
+        function initMap() {
+            // Coordenadas del punto en el mapa
+            var coordenadas = {lat: -33.41895, lng: -70.60282};
+            
+            // Crear un nuevo mapa en el contenedor con id 'map'
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15, // Nivel de zoom del mapa
+                center: coordenadas // Centrar el mapa en las coordenadas especificadas
+            });
+
+            // Crear un marcador en las coordenadas especificadas
+            var marker = new google.maps.Marker({
+                position: coordenadas,
+                map: map,
+                title: 'Ubicación'
+            });
+        }
+    </script>
+    <!-- Incluir la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKz1r_PTY0xbw7UAs0NV1nxWPJpaWH5sM&callback=initMap" async defer></script>
 {% endblock %}
 
 {% block contenido %}
     <!-- Contenido específico de la página de contacto -->
-    <!-- ... Resto del contenido ... -->
+    <div class="row">
+        <!-- Columna para la información de contacto -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Datos de contacto</h2>
+                    <p class="card-text">
+                        <strong class="contacto-titulo">Correo electrónico:</strong> <span class="contacto-dato">info@tuempresa.com</span><br>
+                        <strong class="contacto-titulo">Teléfono:</strong> <span class="contacto-dato">123-456-7890</span><br>
+                        <strong class="contacto-titulo">Dirección:</strong> <span class="contacto-dato">Calle Principal, Ciudad, País</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Columna para el mapa -->
+        <div class="col-md-6">
+            <div id="map"></div> <!-- Contenedor del mapa -->
+        </div>
+    </div>
 {% endblock %}

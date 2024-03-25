@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <title>Hardware Solutions</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
     <link rel="apple-touch-icon" href="{% static 'app/img/apple-icon.png' %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'app/img/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'app/img/favicon.svg' %}">
     {% block css %}
     <!-- Cargar hojas de estilo adicionales si es necesario -->
     {% endblock %}
@@ -29,9 +29,9 @@
                 <!-- Información de contacto -->
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:soporte@hsolutions.com">soporte@hsolutions.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:959530664">959530664</a>
                 </div>
                 <!-- Enlaces a redes sociales -->
                 <div>
@@ -49,11 +49,11 @@
     <!-- Encabezado -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                Zay
+            <!-- Logo -->
+            <a class="" href="{% url 'home' %}">
+                <img src="{% static 'app/img/hardware2.svg' %}" alt="" style="width: 150px;" />
             </a>
-
+            <!-- Fin Logo -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,16 +63,16 @@
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <!-- Enlaces a diferentes secciones del sitio -->
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="{% url 'home' %}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link" href="{% url 'tienda' %}">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -118,46 +118,47 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Hardware Solutions</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
+                            Providencia #35, Santiago, Chile
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                            <a class="text-decoration-none" href="tel:959530664">959530664</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                            <a class="text-decoration-none" href="mailto:soporte@hsolutions.com">soporte@hsolutions.com</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <!-- Enlaces a diferentes categorías de productos -->
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Almacenamiento</a></li>
+                        <li><a class="text-decoration-none" href="#">Accesorios</a></li>
+                        <li><a class="text-decoration-none" href="#">Gabientes</a></li>
+                        <li><a class="text-decoration-none" href="#">Memorias RAM</a></li>
+                        <li><a class="text-decoration-none" href="#">Monitores</a></li>
+                        <li><a class="text-decoration-none" href="#">Procesadores</a></li>
+                        <li><a class="text-decoration-none" href="#">Perifericos</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Navegación</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <!-- Enlaces a diferentes secciones del sitio -->
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#">Tienda</a></li>
+                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
                         <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="#">Politicas del sitio</a></li>
                     </ul>
                 </div>
 
@@ -200,8 +201,8 @@
                     <div class="col-12">
                         <!-- Aviso de derechos de autor -->
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Copyright &copy; 2024 Hardware Solutions 
+                            | Diseñado por <a rel="sponsored" href="" target="_blank">Devcode</a>
                         </p>
                     </div>
                 </div>
